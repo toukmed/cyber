@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="688.0" prefWidth="1158.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.fxml.MainController">
+   <children>
+      <Pane fx:id="myPane" prefHeight="688.0" prefWidth="1158.0" styleClass="background" stylesheets="@../style/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="addCounterBtn" layoutX="164.0" layoutY="26.0" mnemonicParsing="false" onAction="#onAddCounter" prefHeight="28.0" prefWidth="120.0" stylesheets="@../style/button.css" text="Ajouter" />
+            <Button fx:id="changeConfig" layoutX="36.0" layoutY="26.0" mnemonicParsing="false" onAction="#onChangeConfig" prefHeight="28.0" prefWidth="120.0" stylesheets="@../style/button.css" text="Configurer" />
+            <AnchorPane fx:id="rootPane1" layoutX="16.0" layoutY="99.0" prefHeight="256.0" prefWidth="296.0">
+               <children>
+                  <Pane prefHeight="256.0" prefWidth="296.0">
+                     <children>
+                        <Label layoutX="76.0" layoutY="21.0" prefHeight="28.0" prefWidth="131.0" text="CONFIGURATION" textFill="#f22525">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="17.0" layoutY="108.0" text="Nombre de postes" textFill="WHITE" />
+                        <Label layoutX="17.0" layoutY="150.0" text="Prix tarif  (DH)" textFill="WHITE" />
+                        <Spinner fx:id="postesSpinner" layoutX="165.0" layoutY="104.0" prefHeight="25.0" prefWidth="105.0" stylesheets="@../style/style.css" />
+                        <Spinner fx:id="prixSpinner" layoutX="165.0" layoutY="146.0" prefHeight="25.0" prefWidth="105.0" stylesheets="@../style/style.css" />
+                        <Button fx:id="valider" layoutX="173.0" layoutY="197.0" mnemonicParsing="false" onAction="#onValider" prefHeight="28.0" prefWidth="98.0" stylesheets="@../style/button.css" text="Valider" />
+                        <Button fx:id="annuler" layoutX="60.0" layoutY="197.0" mnemonicParsing="false" onAction="#onAnnuler" prefHeight="28.0" prefWidth="105.0" stylesheets="@../style/button.css" text="Annuler" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

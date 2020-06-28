@@ -1,0 +1,25 @@
+
+.background {
+    -fx-background-image: url("backgr.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1200 700;
+    -fx-background-position: center center;
+}
+
+.label{
+
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 12pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.txtField{
+	-fx-padding: 3 22 3 22;
+    -fx-border-width: 2;
+    -fx-background-radius: 2;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14pt;
+    -fx-text-fill: #939393;
+
+}

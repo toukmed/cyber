@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane"  prefHeight="256.0" prefWidth="321.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.fxml.ConfigController">
+   <children>
+            <Pane prefHeight="256.0" prefWidth="236.0">
+               <children>
+                  <Label layoutX="76.0" layoutY="21.0" prefHeight="28.0" prefWidth="208.0" text="CONFIGURATION" textFill="#f22525">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="108.0" text="Nombre de postes" textFill="WHITE" />
+                  <Label layoutX="40.0" layoutY="150.0" text="Prix tarif  (DH)" textFill="WHITE" />
+                  <Spinner fx:id="postesSpinner" layoutX="185.0" layoutY="104.0" prefHeight="25.0" prefWidth="105.0" stylesheets="@../style/style.css" />
+                  <Spinner fx:id="prixSpinner" layoutX="185.0" layoutY="146.0" prefHeight="25.0" prefWidth="105.0" stylesheets="@../style/style.css" />
+                  <Button fx:id="valider" layoutX="193.0" layoutY="197.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" stylesheets="@../style/button.css" text="Valider" />
+                  <Button fx:id="annuler" layoutX="78.0" layoutY="197.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="105.0" stylesheets="@../style/button.css" text="Annuler" />
+               </children>
+            </Pane>
+         </children>
+</AnchorPane>
